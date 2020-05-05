@@ -1,0 +1,47 @@
+.Balance-footer {
+    background-color: #833AE0;
+    color: #FFDC40;
+    height: 70px;
+    display: flex;
+    font-weight: bolder;
+    position: relative;
+}
+
+.Balance-footer div:first-child {
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-style: normal;
+    font-size: 22px;
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+}
+
+.balance-box {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.Balance {
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0;
+    width: 100%;
+}
+
+.Balance-integer-part {
+    font-size: 34px;
+}
+
+.Balance-decimal-part {
+    font-size: 24px;
+    font-style: Roboto;
+}
+

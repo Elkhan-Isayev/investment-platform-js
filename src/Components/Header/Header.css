@@ -1,0 +1,44 @@
+.Header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-wrapper nav {
+    min-width: 350px;
+    padding-top: 10px;
+    margin-left: 5%;
+}
+
+.Header-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.Header-wrapper li {    
+    font-family: Roboto;
+}
+
+.Header-wrapper li a {
+    text-decoration: none;
+}
+
+.Header-image-wrapper li  {
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 3px solid #833AE0;
+}
+
+.Header-image-wrapper {
+    margin-right: 5%;
+    min-width: 150px ;
+    padding-top: 25px;
+}
+
+.Header-links-wrapper li a:hover:not(.active) {
+    color: #FFDC40 !important;
+    border-bottom: 3px solid #000000;
+}

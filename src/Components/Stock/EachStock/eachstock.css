@@ -1,0 +1,117 @@
+.eachStock-row {
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    width: 759px;
+    border-bottom: 1px dashed grey;
+   padding: 20px 0;
+    
+}
+
+.linked  {
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    width: 759px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.eachStock-row:hover {
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    width: 759px;
+    border-bottom: 1px dotted grey;
+    background-color: rgba(130, 58, 224, 0.05);
+    cursor: pointer;
+
+    
+        animation-name: pulse;
+        -webkit-animation-name: pulse;	
+    
+        animation-duration: 1.5s;	
+        -webkit-animation-duration: 1.5s;
+    
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(0.9);
+            opacity: 0.7;		
+        }
+        50% {
+            transform: scale(1);
+            opacity: 1;	
+        }	
+        100% {
+            transform: scale(0.9);
+            opacity: 0.7;	
+        }			
+    }
+    
+    @-webkit-keyframes pulse {
+        0% {
+            -webkit-transform: scale(0.95);
+            opacity: 0.7;		
+        }
+        50% {
+            -webkit-transform: scale(1);
+            opacity: 1;	
+        }	
+        100% {
+            -webkit-transform: scale(0.95);
+            opacity: 0.7;	
+        }			
+    }
+    
+}
+
+
+.eachStock-row-symbol{
+    color:rgba(8, 8, 8, 0.500);
+    font-size: 12px;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 50px;
+    text-align: center;
+}
+
+.eachStock-row-name{
+  color:black;
+  font-size: 1.7vw;
+  margin-left: 10px;
+  align-items: flex-start;
+  width: 550px;
+ 
+}
+
+
+.eachStock-row-name div{
+    color:black;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+
+.eachStock-row-price {
+    color:black;
+    font-size:40px;
+    margin-left: auto;
+    width: 120px;
+    text-align: end;
+}
+
+.eachStock-row-price-decimal {
+    color:black;
+    width: 80px;
+    font-size: 25px;
+    margin-right: 15px;
+    text-align: start;
+    margin-top: 10px;
+    
+}
+

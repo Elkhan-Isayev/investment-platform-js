@@ -1,0 +1,58 @@
+.Account-wrapper {
+    padding-bottom: 80px;
+}
+
+.Account-header {
+    height: 150px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    padding-top: 15px;
+}
+
+.Account-header-center {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    margin-top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.show-dif {
+    font-size: 18px;
+    margin-top: 43px;
+}
+
+.Account-content {
+    min-width: 760px;
+    padding-top: 50px;
+}
+
+.Account-each-account-set-wrapper {
+    min-height: 280px;
+}
+
+.Account-balance-integer-part {
+    color: #000000;
+    font-size: 64px;
+}
+
+.Account-balance-decimal-part {
+    font-size: 36px;
+    color: #000000;
+}
+
+.Account-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}   
+
+.Account-list ul a {
+    text-decoration: none !important;
+}
+
+.is-active li {
+    font-weight: 900 !important;
+    border-bottom: 3px solid #833ae0 !important;
+}
