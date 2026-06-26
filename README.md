@@ -1,11 +1,14 @@
 # Investment Platform
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-833ae0?style=for-the-badge&logo=github)](https://elkhan-isayev.github.io/investment-platform-js/)
+[![Deploy to GitHub Pages](https://github.com/Elkhan-Isayev/investment-platform-js/actions/workflows/deploy.yml/badge.svg)](https://github.com/Elkhan-Isayev/investment-platform-js/actions/workflows/deploy.yml)
+
 A small single-page investment-platform demo built with **React 18** and **Vite**.
 Browse a list of stocks, open a company to see its price history on an interactive
 chart, and buy shares against a virtual balance. Your portfolio's current value and
 profit/loss update live.
 
-🔗 **Live demo:** https://elkhan-isayev.github.io/investment-platform-js/
+> 🔗 **Live demo →** https://elkhan-isayev.github.io/investment-platform-js/
 
 ## Features
 
