@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Buy.css';
 import DatePicker from './DatePicker';
+import withRouter from '../../withRouter';
 
 class Buy extends Component {
 
@@ -57,7 +58,7 @@ class Buy extends Component {
                     .then(data => data.json()).then(result => {
                         price = result.currentBalance - price;
                         this.updateBalance(price);
-                        this.props.history.goBack();
+                        this.props.router.navigate(-1);
                     }).catch(err => alert("something wrong please try again later"))
             } 
        } else {
@@ -116,7 +117,7 @@ class Buy extends Component {
     //getting each stock data in the page to buy
 
     getData = () => {
-        let id = this.props.match.params.id;
+        let id = this.props.router.params.id;
         this._isMounted &&   fetch(`https://financialmodelingprep.com/api/v3/company/profile/${id}`).then(data => data.json()).then(data => {
             let price = data.profile.price;
             this._isMounted && this.setState({ data, price })
@@ -134,7 +135,7 @@ class Buy extends Component {
             <div className="main">
 
                 <div className="container">
-                    <div style={{left: '5%'}}><i className="glyphicon glyphicon-menu-left"></i><button onClick={() => this.props.history.goBack()}>Back</button></div>
+                    <div style={{left: '5%'}}><i className="glyphicon glyphicon-menu-left"></i><button onClick={() => this.props.router.navigate(-1)}>Back</button></div>
                     <div><p>{data.profile.companyName}</p></div>
                 </div>
                 <div className="buy-defaut-price"><p>{splitstring[0]}.</p><span>{splitstring[1]}$</span></div>
@@ -155,4 +156,4 @@ class Buy extends Component {
     }
 }
 
-export default Buy;
+export default withRouter(Buy);

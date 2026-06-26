@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Investment Platform
 
-## Available Scripts
+A small single-page investment-platform demo built with **React 18** and **Vite**.
+Browse a list of stocks, open a company to see its price history on an interactive
+chart, and buy shares against a virtual balance. Your portfolio's current value and
+profit/loss update live.
 
-In the project directory, you can run:
+🔗 **Live demo:** https://elkhan-isayev.github.io/investment-platform-js/
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Account** — your portfolio with live profit/loss per position and in total.
+- **Stock** — browse / search the catalogue and drill into any company.
+- **Buy** — adjust quantity, see the running total, and purchase against your balance.
+- **Price chart** — historical prices over a selectable date range (Recharts).
+- **Demo data** — the original public APIs are gone, so a built-in mock layer
+  (`src/demoApi.js`) serves realistic data, keeping the demo fully interactive offline.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Tech stack
 
-### `npm test`
+| Concern   | Tool |
+|-----------|------|
+| Build     | Vite 6 |
+| UI        | React 18 |
+| Routing   | react-router-dom 6 (HashRouter, for GitHub Pages) |
+| Charts    | Recharts 2 |
+| Dates     | react-datepicker 7 |
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting started
 
-### `npm run build`
+```bash
+npm install     # install dependencies (Node 22 — see .nvmrc)
+npm run dev     # start the dev server at http://localhost:3000
+npm run build   # production build into dist/
+npm run preview # preview the production build locally
+npm run lint    # run ESLint
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Every push to `master` is built and published to GitHub Pages by the
+[`deploy`](.github/workflows/deploy.yml) GitHub Actions workflow.
+The app uses a hash-based router and a `/investment-platform-js/` base path so it
+works correctly from a project subpath without any server-side configuration.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## History
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project began life as a Create React App (`react-scripts` 3.4.1 / React 16)
+and was modernized to the Vite + React 18 stack above — removing 224 known
+dependency vulnerabilities in the process.

@@ -1,15 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import './demoApi'; // wires up demo data for the (long-dead) public APIs
 import './index.css';
 import Application from './Application';
 
-
-
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-   <Application />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Application />
+  </React.StrictMode>
 );
-
-

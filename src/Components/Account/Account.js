@@ -1,8 +1,7 @@
 import React, {Component} from 'react';                             //  Get react
 import ShowDiffer from './ShowDiffer/ShowDiffer';                   //  Get stock difference representer
 import EachAccountData from './EachAccountData/EachAccountData';    //  Get each data-row
-import Pagination from "react-pagination-library";                  //  Get pagination
-import "react-pagination-library/build/css/index.css";              //  Get pagination-css
+import Pagination from '../Pagination/Pagination';                  //  Get pagination
 import './Account.css';                                             //  Get page css
 import '../../animations.css';                                      //  Get css-animations
 

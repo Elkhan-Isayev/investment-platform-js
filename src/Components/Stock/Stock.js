@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import EachStock from './EachStock/EachStock';
 import './stock.css';
-import Pagination from "react-pagination-library";
-import "react-pagination-library/build/css/index.css"; 
+import Pagination from '../Pagination/Pagination';
+
+const BASE = import.meta.env.BASE_URL;
 
 
 
@@ -63,7 +64,7 @@ class Stock extends Component {
             <div className='stock'>
                 <div className="stock-header"></div>
                 <div className='stock-input'>
-                <img src={'/assets/search-logo.png'} alt="magnifier"/>
+                <img src={`${BASE}assets/search-logo.png`} alt="magnifier"/>
                 <input onInput={this.stockFilterHandler} type='text' placeholder='enter company ticker'/>
                 </div>
                 <div className='stock-arr'>

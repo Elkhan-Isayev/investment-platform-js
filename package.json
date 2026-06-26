@@ -1,28 +1,29 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "investment-platform-js",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "dayjs": "^1.8.26",
-    "react": "^16.13.1",
-    "react-datepicker": "^2.14.1",
-    "react-dom": "^16.13.1",
-    "react-pagination-library": "^0.1.14",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "recharts": "^1.8.5"
-  },
+  "type": "module",
+  "homepage": "https://elkhan-isayev.github.io/investment-platform-js/",
+  "description": "A small investment-platform demo: browse stocks, view price history and buy shares against a virtual balance.",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-datepicker": "^7.6.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react": "^7.37.4",
+    "vite": "^6.0.7"
   },
   "browserslist": {
     "production": [
